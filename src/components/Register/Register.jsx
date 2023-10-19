@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header2 from '../Header2/Header2';
 
 const Register = () => {
     const handleRegister = e =>{
@@ -11,7 +12,9 @@ const Register = () => {
         // console.log(user);
     }
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div>
+            <Header2></Header2>
+            <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left">
                 <h1 className="text-5xl font-bold">Register now!</h1>
@@ -43,6 +46,7 @@ const Register = () => {
             </div>
         </div>
     </div>
+        </div>
     );
 };
 

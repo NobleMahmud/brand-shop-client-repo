@@ -10,6 +10,7 @@ import EachProduct from "../components/EachProduct/EachProduct";
 import LogIn from "../components/LogIn/LogIn";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import MyCart from "../components/MyCart/MyCart";
+import Update from "../components/Update/Update";
 
   const router = createBrowserRouter([
     {
@@ -46,6 +47,11 @@ import MyCart from "../components/MyCart/MyCart";
         {
           path: "/mycart",
           element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
+        },
+        {
+          path: "/update/:id",
+          element: <Update></Update>,
+          loader: ({params})=>fetch(`http://localhost:5000/update/${params.id}`)
         },
       ],
     },

@@ -12,6 +12,10 @@ import {
 import Header2 from '../Header2/Header2';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
+
 const EachProduct = () => {
     const loadedProduct = useLoaderData();
    
@@ -42,9 +46,16 @@ const EachProduct = () => {
         })
             .then(res => res.json())
             .then(data => {
+                Swal.fire({
+                   icon: 'success',
+                   title: 'Success',
+                   text: 'Product added!',
+                 })
                 console.log(data);
+                 toast("Product Added");
+                
             })
-    }
+        }
 
     
 
@@ -74,6 +85,7 @@ const EachProduct = () => {
                     >
                         Add to Cart
                     </Button>
+            <ToastContainer />
                 </CardFooter>
         
       </CardBody>

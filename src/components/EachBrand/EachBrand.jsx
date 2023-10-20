@@ -24,7 +24,10 @@ console.log(products);
             <Header2></Header2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 pb-24">
                 {
+                    products.length>0?
                     products.map((product, idx)=><BrandProducts key={idx} product={product} products={products}></BrandProducts>)
+                    :
+                    <h3>Not available</h3>
                 }
             </div>
         </div>

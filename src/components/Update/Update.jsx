@@ -22,7 +22,7 @@ const Update = () => {
         const updateProduct = {_id, brand, name, photo, type, price, rating, description }
         
 
-        fetch(`https://localhost:5000/update/${_id}`,{
+        fetch(`http://localhost:5000/updateData/${_id}`,{
             method: 'PUT',
             headers:{
                 'content-type': 'application/json'
@@ -122,6 +122,7 @@ const Update = () => {
                                             <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
 
                                                 <input
+                                                defaultValue={'examplename'}
                                                     type="text"
                                                     name="name"
                                                     placeholder="Enter product name"

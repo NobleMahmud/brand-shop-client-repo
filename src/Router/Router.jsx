@@ -3,7 +3,7 @@ import LayOut from "../LayOut/LayOut";
 import Home from "../components/Home/Home";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Register from "../components/Register/Register";
-import Register2 from "../components/Register/Register";
+// import Register2 from "../components/Register/Register";
 import AddProduct from "../components/AddProduct/AddProduct";
 import EachBrand from "../components/EachBrand/EachBrand";
 import EachProduct from "../components/EachProduct/EachProduct";
@@ -11,6 +11,7 @@ import LogIn from "../components/LogIn/LogIn";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import MyCart from "../components/MyCart/MyCart";
 import Update from "../components/Update/Update";
+import NewForm from "../components/NewForm/NewForm";
 
   const router = createBrowserRouter([
     {

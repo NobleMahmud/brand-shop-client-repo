@@ -2,13 +2,14 @@ import {createBrowserRouter} from "react-router-dom";
 import LayOut from "../LayOut/LayOut";
 import Home from "../components/Home/Home";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
-import LogIn from "../components/LogIn/LogIn";
 import Register from "../components/Register/Register";
-import LogIn2 from "../components/LogIn2/LogIn2";
-import Register2 from "../components/Register2/Register2";
+import Register2 from "../components/Register/Register";
 import AddProduct from "../components/AddProduct/AddProduct";
 import EachBrand from "../components/EachBrand/EachBrand";
 import EachProduct from "../components/EachProduct/EachProduct";
+import LogIn from "../components/LogIn/LogIn";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import MyCart from "../components/MyCart/MyCart";
 
   const router = createBrowserRouter([
     {
@@ -27,20 +28,12 @@ import EachProduct from "../components/EachProduct/EachProduct";
         },
         {
           path: "/product/:id",
-          element: <EachProduct></EachProduct>,
+          element: <PrivateRoute><EachProduct></EachProduct></PrivateRoute>,
           loader: ({params})=>fetch(`http://localhost:5000/product/${params.id}`)
         },
         {
           path: "/login",
           element: <LogIn></LogIn>,
-        },
-        {
-          path: "/login2",
-          element: <LogIn2></LogIn2>,
-        },
-        {
-          path: "/register2",
-          element: <Register2></Register2>,
         },
         {
           path: "/register",
@@ -49,6 +42,10 @@ import EachProduct from "../components/EachProduct/EachProduct";
         {
           path: "/addproduct",
           element: <AddProduct></AddProduct>
+        },
+        {
+          path: "/mycart",
+          element: <MyCart></MyCart>
         },
       ],
     },

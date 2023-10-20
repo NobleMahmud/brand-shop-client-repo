@@ -15,13 +15,16 @@ const EachBrand = () => {
         setProducts(data);
     })
    },[brandName])
+
+//    const allProduct = products.filter(pro=>pro.brand !=='Samsung')
+console.log(products);
     
     return (
         <div>
             <Header2></Header2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 pb-24">
                 {
-                    products.map((product, idx)=><BrandProducts key={idx} product={product}></BrandProducts>)
+                    products.map((product, idx)=><BrandProducts key={idx} product={product} products={products}></BrandProducts>)
                 }
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Brand2 = ({brand}) => {
     const {brandName ,img, logo} = brand;
-    // style={{backgroundImage:`url(${photo})`}}
+   
     return (
         
             <div  className="da relative flex rounded-t-xl flex-col object-fit bg-cover

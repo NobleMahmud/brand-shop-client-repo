@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import {
     Card,
@@ -10,6 +10,7 @@ import {
     Slider,
 } from "@material-tailwind/react";
 import Header2 from '../Header2/Header2';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const EachProduct = () => {
     const loadedProduct = useLoaderData();
@@ -21,9 +22,30 @@ const EachProduct = () => {
     console.log(loadedProduct);
 
 
-    const { brand, name, photo, description, price, rating } = loadedProduct;
+    const { brand, name, photo, description, type, price, rating } = loadedProduct;
 
-    
+    const {user} = useContext(AuthContext)
+    console.log(user.email);
+    const email = user.email;
+    console.log(email);
+
+    const cartProduct = { brand, name, photo, type, price, email, rating, description }
+       
+    const handleCart =() =>{
+
+        fetch('http://localhost:5000/cart', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(cartProduct)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+    }
+
     
 
     return (
@@ -44,6 +66,7 @@ const EachProduct = () => {
                         <CardBody>
                         <CardFooter className="pt-0">
                     <Button
+                    onClick={handleCart}
                         ripple={false}
                         fullWidth={true}
                         className='hover:brightness-200'

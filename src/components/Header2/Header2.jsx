@@ -130,8 +130,8 @@ const Header2 = () => {
                     src={user.photoURL}
                   />
                   <div>
-                    <h2>{user.displayName}</h2>
                     <h2>{user.email}</h2>
+                    <h2>{user.displayName}</h2>
                   </div>
                 </div>
                 {/* <Button

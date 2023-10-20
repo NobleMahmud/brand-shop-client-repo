@@ -45,7 +45,7 @@ import MyCart from "../components/MyCart/MyCart";
         },
         {
           path: "/mycart",
-          element: <MyCart></MyCart>
+          element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
         },
       ],
     },

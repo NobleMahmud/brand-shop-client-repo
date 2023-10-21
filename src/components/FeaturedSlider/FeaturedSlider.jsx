@@ -54,7 +54,7 @@ const FeaturedSlider = () => {
             
             <li>
               <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 hover:px-4 pt-40 max-w-sm mx-auto mt-24 group cursor-pointer  bg-white shadow-xl ring-1 ring-gray-900/5 transition-all hover:-translate-y-2 duration-1000 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
-                        <img src="https://i.ibb.co/JrcFwZq/newsroom-vision-hx-1-1.jpg" alt="product" className="absolute inset-0 h-full w-full object-cover" />
+                        <img src="https://i.ibb.co/CVD1SDX/fabian-albert-xa-KEDwvfu-GI-unsplash.jpg" alt="product" className="absolute inset-0 h-full w-full object-cover" />
                             <div>
                                 <a className="inline-flex sticky bottom-0 px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group">
                                     <span className="relative"></span>
@@ -76,7 +76,18 @@ const FeaturedSlider = () => {
             </li>
             <li>
               <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 hover:px-4 pt-40 max-w-sm mx-auto mt-24 group cursor-pointer  bg-white shadow-xl ring-1 ring-gray-900/5 transition-all hover:-translate-y-2 duration-1000 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
-                        <img src="https://i.ibb.co/JrcFwZq/newsroom-vision-hx-1-1.jpg" alt="product" className="absolute inset-0 h-full w-full object-cover" />
+                        <img src="https://i.ibb.co/kM65xf4/panasonic-lz2000.webp" alt="product" className="absolute inset-0 h-full w-full object-cover" />
+                            <div>
+                                <a className="inline-flex sticky bottom-0 px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group">
+                                    <span className="relative"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+            </li>
+            <li>
+              <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 hover:px-4 pt-40 max-w-sm mx-auto mt-24 group cursor-pointer  bg-white shadow-xl ring-1 ring-gray-900/5 transition-all hover:-translate-y-2 duration-1000 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                        <img src="https://i.ibb.co/n34XDh2/Fm-Bq5k1-XEAMn-CUg-photoutils-com-1.jpg" alt="product" className="absolute inset-0 h-full w-full object-cover" />
                             <div>
                                 <a className="inline-flex sticky bottom-0 px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group">
                                     <span className="relative"></span>

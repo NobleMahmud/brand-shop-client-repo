@@ -37,7 +37,7 @@ const EachProduct = () => {
        
     const handleCart =() =>{
 
-        fetch('http://localhost:5000/cart', {
+        fetch('https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

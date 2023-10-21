@@ -9,7 +9,7 @@ const EachBrand = () => {
     const { brandName } = useParams();
     // console.log(brandName);
     useEffect(() => {
-        fetch(`http://localhost:5000/addproduct/${brandName}`)
+        fetch(`https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/addproduct/${brandName}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);

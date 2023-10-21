@@ -87,7 +87,7 @@ const Register = () => {
 
                         <div className="relative">
                             <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
-                                <h3 className="text-4xl font-bold text-white">Join 35k+ web professionals & <br className="hidden xl:block" />build your website</h3>
+                                <h3 className="text-4xl font-bold text-white">Become a part of the biggest tech community in the world!</h3>
                                 <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
                                     <li className="flex items-center space-x-3">
                                         <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -103,7 +103,7 @@ const Register = () => {
                                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                                             </svg>
                                         </div>
-                                        <span className="text-lg font-medium text-white"> Unlimited Exports </span>
+                                        <span className="text-lg font-medium text-white"> 103 Nations </span>
                                     </li>
                                     <li className="flex items-center space-x-3">
                                         <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -111,7 +111,7 @@ const Register = () => {
                                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                                             </svg>
                                         </div>
-                                        <span className="text-lg font-medium text-white"> 120+ Coded Blocks </span>
+                                        <span className="text-lg font-medium text-white"> 120 miilion + shipments worldwide </span>
                                     </li>
                                     <li className="flex items-center space-x-3">
                                         <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -119,7 +119,7 @@ const Register = () => {
                                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                                             </svg>
                                         </div>
-                                        <span className="text-lg font-medium text-white"> Design Files Included </span>
+                                        <span className="text-lg font-medium text-white"> 20+ years of loyalty </span>
                                     </li>
                                 </ul>
                             </div>

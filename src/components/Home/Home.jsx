@@ -7,22 +7,25 @@ import { data } from 'autoprefixer';
 import Brand2 from '../Brand2/Brand2';
 import Slider2 from '../Slider/Slider2';
 import ProductSwiper from '../ProductSwiper/ProductSwiper';
-import RatingsSlide from '../RatingsSlide/RatingsSlide';
 
-// import Header from '../Header/Header';
+
 
 const Home = () => {
     const brands = useLoaderData();
 
     return (
-        <div className=''>
+        <div>
             <Header2></Header2>
-          <div className='mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto'>
+            <div style={{backgroundImage:'url("https://i.ibb.co/5js22PY/computer-3174729.jpg")'}} className='h-96 flex items-center flex-col-reverse justify-center md:h-[700px] bg-cover '>
+              <h3 className='text-4xl font-bold text-gray-200'>Unlocking Tomorrow's Technology Today</h3>
+               <img className='w-1/3 h-1/2 rounded-xl' src="https://i.ibb.co/68H34T4/INNOVATION-X-removebg-preview.png" alt="" />
+            </div>
+          <div  className='mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto'>
           {
                 brands.map((brand, idx)=><Link to={`/home/${brand.brandName}`} key={idx}><Brand2  brand={brand}></Brand2></Link>)
             }
           </div>
-          <RatingsSlide></RatingsSlide>
+          
         </div>
     );
 };

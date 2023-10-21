@@ -112,7 +112,7 @@ const Header2 = () => {
           href="#"
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
-          Brand Shop
+          <img className="w-14 h-12 rounded-xl" src="https://i.ibb.co/yykHgRK/INNOVATION-X1.png" alt="" />
         </Typography>
         {/* logo end */}
 

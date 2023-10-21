@@ -14,31 +14,43 @@
         "img": "https://i.ibb.co/WWWrJrV/download-4.webp",
         "slide1":"https://i.ibb.co/fYDKSsd/dm9qefzptw9gep3e33p-Fu-K.jpg",
         "slide2":"https://i.ibb.co/PY1wH5R/zana-latif-5u-JMG9f-UAO0-unsplash.jpg",
-        "slide3":"https://i.ibb.co/1Qm904W/csm-IMG-9062-8626e5983d.jpg",
+        "slide3":"https://i.ibb.co/WsmDCxb/Samsung-Galaxy-Z-Fold-4-Flip-4.webp",
         "logo":"https://i.ibb.co/D5LHSDL/Samsung-Logo-svg.png"
     },
     {
         "brandName": "Sony",
         "id": 3,
         "img": "https://i.ibb.co/Jd9GM4r/p1015114.webp",
+        "slide1":"https://i.ibb.co/vwXQyhj/kim-becker-n-WPZFn-ZHktk-unsplash.jpg",
+        "slide2":"https://i.ibb.co/GcHckLW/nikita-kostrykin-i1-Q9pphr-WUw-unsplash.jpg",
+        "slide3":"https://i.ibb.co/tckg79k/tech-daily-c-F6-Le-0vi-HY-unsplash.jpg",
         "logo":"https://i.ibb.co/WVS9c0z/Sony-Make-Believe-logo-white-on-black-removebg-preview.png"
     },
     {
         "brandName": "Google",
         "id": 4,
         "img": "https://i.ibb.co/9NwM1gn/google-pixel-and-watch-kv.jpg",
+        "slide1":"https://i.ibb.co/3RqwQtg/9-scaled.jpg",
+        "slide2":"https://i.ibb.co/f8r3mr8/708689866-227784264-1706x960.webp",
+        "slide3":"https://i.ibb.co/Hr9HM5C/pixel-watch-hero-image.jpg",
         "logo":"https://i.ibb.co/6BmcdVG/png-clipart-google-logo-googleplex-google-search-google-company-text-thumbnail-removebg-preview.png"
     },
     {
         "brandName": "Intel",
         "id": 5,
         "img": "https://i.ibb.co/3NTVgcQ/amr-taha-j-Wpc-AWEe-Lc-unsplash.jpg",
+        "slide1":"https://i.ibb.co/w0rc90b/core-14th-gen-processor-product-image-png-rendition-intel-web-576-324.png",
+        "slide2":"https://i.ibb.co/5RmxGwB/RKL-Family-Shot-2.jpg",
+        "slide3":"https://i.ibb.co/wK2W0LF/Intel-Arc-A770-Limited-Edition-GPU.webp",
         "logo":"https://i.ibb.co/cDv9s5c/intel-removebg-preview.png"
     },
     {
         "brandName": "Panasonic",
         "id": 6,
         "img": "https://i.ibb.co/jZhKXMx/Panasonic-Corporation-Banner-01.jpg",
+        "slide1":"https://i.ibb.co/kM65xf4/panasonic-lz2000.webp",
+        "slide2":"https://i.ibb.co/5j455mz/panasonic-microwave-1682822925-65dc3bab-progressive.jpg",
+        "slide3":"https://i.ibb.co/NVpNKDv/panasonic-lumix-gh5-featured-image.webp",
         "logo":"https://i.ibb.co/KDFLjqC/Panasonic-Logo-removebg-preview.png"
     }
 ]

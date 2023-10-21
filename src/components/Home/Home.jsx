@@ -7,6 +7,10 @@ import { data } from 'autoprefixer';
 import Brand2 from '../Brand2/Brand2';
 import Slider2 from '../Slider/Slider2';
 import ProductSwiper from '../ProductSwiper/ProductSwiper';
+import Testimonial from '../Testimonial/Testimonial';
+import Footer from '../Footer/Footer';
+import FeaturedSlider from '../FeaturedSlider/FeaturedSlider';
+import ProductSlide from '../ProductSlide/ProductSlide';
 
 
 
@@ -23,9 +27,15 @@ const Home = () => {
           <div  className='mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto'>
           {
                 brands.map((brand, idx)=><Link to={`/home/${brand.brandName}`} key={idx}><Brand2  brand={brand}></Brand2></Link>)
+
             }
           </div>
-          
+         <FeaturedSlider></FeaturedSlider>
+         
+          <div className='mb-5 mt-20'>
+          <Testimonial></Testimonial>
+          </div>
+          <Footer></Footer>
         </div>
     );
 };

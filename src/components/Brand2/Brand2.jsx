@@ -5,7 +5,8 @@ const Brand2 = ({brand}) => {
    
     return (
         
-            <div  className="da relative flex rounded-t-xl flex-col object-fit bg-cover
+            <div>
+                <div  className="da relative flex rounded-t-xl flex-col object-fit bg-cover
             justify-center overflow-hidden bg-gray-50">
                 <div className="absolute inset-0 bg-center dark:bg-black"></div>
                 <div className="group relative m-0 flex h-96 w-full rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
@@ -15,9 +16,10 @@ const Brand2 = ({brand}) => {
                     <div className="absolute bottom-0 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
                         <img className='w-[100%] absolute left-36 -top-32' src={logo} alt="" />
                         <h1 className="font-serif text-2xl font-bold text-white shadow-xl">{brandName}</h1>
-                        {/* <h1 className="text-sm font-light text-gray-200 shadow-xl">A Little Paradise in Portugal</h1> */}
+                      
                     </div>
                 </div>
+            </div>
             </div>
     );
 };

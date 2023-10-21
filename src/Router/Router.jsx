@@ -47,7 +47,7 @@ import NewForm from "../components/NewForm/NewForm";
         },
         {
           path: "/mycart",
-          element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
+          element: <MyCart></MyCart>
         },
         {
           path: "/update/:id",

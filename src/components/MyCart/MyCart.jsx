@@ -20,8 +20,10 @@ const MyCart = () => {
         <div>
             <Header2></Header2>
             <div className='grid md:grid-cols-2 lg:grid-cols-3'>
-                    {
+                    { products.length>0?
                         products.map((product, idx)=><CartProducts products={products} setProducts={setProducts} key={idx} product={product}></CartProducts>)
+                        :
+                        <h3 className='text-3xl text center'>Nothing in Cart</h3>
                     }
             </div>
         </div>

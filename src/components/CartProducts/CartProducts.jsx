@@ -25,8 +25,6 @@ const CartProducts = ({ product, products, setProducts }) => {
                     .then(data => {
                         console.log(data);
                     })
-                    // const remaining = coffees.filter(cof=>cof._id !==_id)
-                    // setCoffees(remaining)
                 Swal.fire(
                     'Deleted!',
                     'Your file has been deleted.',
@@ -47,11 +45,6 @@ const CartProducts = ({ product, products, setProducts }) => {
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                     <h3 className="z-10 mt-3 hover:text-teal-300 duration-1000 text-3xl font-bold text-white">{name} <br /></h3>
                     <div className="z-10 gap-y-1 text-sm overflow-hidden leading-6 text-gray-300">${price} <br />
-                        {/* <button>
-                            <a className="flex items-center px-5 py-2 text-gray-500 bg-gray-100 rounded-md hover: hover:bg-gray-200 hover:text-gray-600">
-                                Delete
-                            </a>
-                        </button> */}
 
                         <a onClick={()=>handleDelete(_id)} className="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
                             <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>

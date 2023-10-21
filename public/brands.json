@@ -3,12 +3,18 @@
         "brandName": "Apple",
         "id": 1,
         "img": "https://i.ibb.co/G5cqM8p/i-Stock-1363326235.jpg",
+        "slide1":"https://i.ibb.co/DtDx8ch/p1002240-1.webp",
+        "slide2":"https://i.ibb.co/64bzRGV/maxresdefault.jpg",
+        "slide3":"https://i.ibb.co/jf0CjYM/julian-o-hayon-Bs-zng-H79-Ds-unsplash.jpg",
         "logo":"https://i.ibb.co/59f1wH9/png-transparent-white-line-font-apple-logo-white-heart-logo-removebg-preview.png"
     },
     {
         "brandName": "Samsung",
         "id": 2,
         "img": "https://i.ibb.co/WWWrJrV/download-4.webp",
+        "slide1":"https://i.ibb.co/fYDKSsd/dm9qefzptw9gep3e33p-Fu-K.jpg",
+        "slide2":"https://i.ibb.co/PY1wH5R/zana-latif-5u-JMG9f-UAO0-unsplash.jpg",
+        "slide3":"https://i.ibb.co/1Qm904W/csm-IMG-9062-8626e5983d.jpg",
         "logo":"https://i.ibb.co/D5LHSDL/Samsung-Logo-svg.png"
     },
     {

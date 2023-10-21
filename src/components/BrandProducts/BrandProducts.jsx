@@ -3,8 +3,8 @@ import Header2 from '../Header2/Header2';
 import { Link } from 'react-router-dom';
 
 const BrandProducts = ({ product, products }) => {
-    console.log(product.brand);
-    console.log(product);
+    // console.log(product.brand);
+    // console.log(product);
  
    
     

@@ -5,7 +5,7 @@ const Testimonial = () => {
         <div>
             <div className="overflow-hidden bg-white rounded text-slate-500">
         <div className="relative p-6">
-          <figure className="relative z-10">
+          <figure className="relative ">
             <blockquote className="p-6 text-lg leading-relaxed">
               <p>
               Finding the latest tech treasures and innovations is a breeze on Innovation X. Their commitment to curating cutting-edge gadgets and their passion for staying ahead in the tech world make them my go-to source for all things electronic. It's a tech enthusiast's dream come true!
@@ -92,7 +92,7 @@ const Testimonial = () => {
               </span>
               <div className="flex items-center gap-4 pt-4 text-sm text-emerald-500">
                 <img
-                  src="https://i.pravatar.cc/40?img=11"
+                  src="https://i.ibb.co/dg8tryD/4518757f-393c-4816-ba34-abe6a4d7aea5-large1x1-Elon-Musk.jpg"
                   alt="user name"
                   title="user name"
                   width="48"
@@ -100,9 +100,9 @@ const Testimonial = () => {
                   className="max-w-full rounded-full shrink-0"
                 />
                 <div className="flex flex-col gap-1">
-                  <span className="font-bold uppercase">Bill Gates</span>
+                  <span className="font-bold uppercase">Elon Musk</span>
                   <cite className="not-italic">
-                    <a href="http://www.microsoft.com">CEO, Microsoft</a>
+                    <a href="http://www.microsoft.com">CEO, TESLA Inc.</a>
                   </cite>
                 </div>
               </div>

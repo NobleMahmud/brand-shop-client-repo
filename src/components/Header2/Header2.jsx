@@ -39,7 +39,11 @@ const Header2 = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <NavLink to="/" className="flex items-center">
+        <NavLink to="/" 
+        // className="flex items-center"
+        className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
+
           Home
         </NavLink>
         {/* <a href="#" className="flex items-center">
@@ -55,7 +59,9 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Account
           </a> */}
-        <NavLink to="/register" className="flex items-center">
+        <NavLink to="/register" 
+        className={({ isActive, isPending }) =>
+        isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           Register
         </NavLink>
       </Typography>
@@ -68,7 +74,9 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Blocks
           </a> */}
-        <NavLink to="/login" className="flex items-center">
+        <NavLink to="/login" 
+        className={({ isActive, isPending }) =>
+        isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           LogIn
         </NavLink>
       </Typography>
@@ -81,7 +89,9 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Blocks
           </a> */}
-        <NavLink to="/addproduct" className="flex items-center">
+        <NavLink to="/addproduct" 
+        className={({ isActive, isPending }) =>
+        isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           Add Product
         </NavLink>
       </Typography>
@@ -94,7 +104,10 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Blocks
           </a> */}
-        <NavLink to="/mycart" className="flex items-center">
+        <NavLink 
+        to="/mycart" 
+        className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           My Cart
         </NavLink>
       </Typography>
@@ -143,7 +156,7 @@ const Header2 = () => {
                 </Button> */}
                 
                <button onClick={handleLogOut}>
-               <a className="flex items-center hidden lg:inline px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover: hover:bg-gray-200 hover:text-gray-600">
+               <a className="flex items-center hidden lg:inline px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover: hover:bg-gray-300 hover:text-gray-600">
                   Log Out
                 </a>
                </button>

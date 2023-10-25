@@ -4,12 +4,37 @@ import {
   Typography,
   Button,
   IconButton,
+  useTheme,
 } from "@material-tailwind/react";
-import React, { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Header2 = () => {
+
+  const [mode, setMode] = useState("light");
+
+  function themeChange() {
+    const html = document.documentElement;
+    if (mode == "light") {
+      html.classList.remove("light")
+      html.classList.add("dark")
+      setMode("dark")
+      localStorage.setItem("mode", "dark")
+    } else {
+      html.classList.remove("dark")
+      html.classList.add("light")
+      setMode("light")
+      localStorage.setItem("mode", "light")
+    }
+
+  }
+  useEffect(() => {
+    const currentMode = localStorage.getItem("mode") || "light";
+    document.documentElement.classList.add(currentMode)
+    setMode(currentMode);
+  }, [])
+
 
   const { user, logOut } = useContext(AuthContext);
   // console.log(user);
@@ -39,10 +64,11 @@ const Header2 = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <NavLink to="/" 
-        // className="flex items-center"
-        className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
+
+        <NavLink to="/"
+          // className="flex items-center"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
 
           Home
         </NavLink>
@@ -59,9 +85,9 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Account
           </a> */}
-        <NavLink to="/register" 
-        className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
+        <NavLink to="/register"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           Register
         </NavLink>
       </Typography>
@@ -74,9 +100,9 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Blocks
           </a> */}
-        <NavLink to="/login" 
-        className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
+        <NavLink to="/login"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           LogIn
         </NavLink>
       </Typography>
@@ -89,9 +115,9 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Blocks
           </a> */}
-        <NavLink to="/addproduct" 
-        className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
+        <NavLink to="/addproduct"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           Add Product
         </NavLink>
       </Typography>
@@ -104,10 +130,10 @@ const Header2 = () => {
         {/* <a href="#" className="flex items-center">
             Blocks
           </a> */}
-        <NavLink 
-        to="/mycart" 
-        className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
+        <NavLink
+          to="/mycart"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active bg-blue-gray-50 hover:bg-blue-gray-100 p-3 rounded-md" : "hover:bg-blue-gray-100 p-3 rounded-md"}>
           My Cart
         </NavLink>
       </Typography>
@@ -154,17 +180,43 @@ const Header2 = () => {
                 >
                   <span>Log Out</span>
                 </Button> */}
-                
-               <button onClick={handleLogOut}>
-               <a className="flex items-center hidden lg:inline px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover: hover:bg-gray-300 hover:text-gray-600">
-                  Log Out
-                </a>
-               </button>
-                
+
+                <button onClick={handleLogOut}>
+                  <a className="flex items-center hidden lg:inline px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover: hover:bg-gray-300 hover:text-gray-600">
+                    Log Out
+                  </a>
+                </button>
+
               </div>
               :
               ""
           }
+          <button className="hover:text-gray-600 swap swap-rotate transition-transform duration-1000 ease-in-out" onClick={themeChange}>
+
+            {
+              mode == "dark" ?
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
+                className={`w-6 h-6 transform transition-transform duration-500 ease-in-out rotate-45`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+                :
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
+                className={`w-6 h-6 transform transition-transform duration-500 ease-in-out rotate-0`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+
+
+            }
+
+          </button>
+
+          
+
+
+
+
+
+
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -209,11 +261,11 @@ const Header2 = () => {
         {
           user ?
             <div>
-               <button onClick={handleLogOut}>
-               <a className="flex items-center lg:inline px-6 py-3 text-gray-500  rounded-md hover: hover:bg-gray-200 hover:text-gray-600 ">
+              <button onClick={handleLogOut}>
+                <a className="flex items-center lg:inline px-6 py-3 text-gray-500  rounded-md hover: hover:bg-gray-200 hover:text-gray-600 ">
                   Log Out
                 </a>
-               </button>
+              </button>
             </div>
             :
             ""

@@ -3,11 +3,11 @@ import React from 'react';
 const Testimonial = () => {
     return (
         <div>
-            <div className="overflow-hidden bg-white rounded text-slate-500">
+            <div className="overflow-hidden dark:text-black dark:bg-gray-800 bg-white rounded text-slate-500">
         <div className="relative p-6">
           <figure className="relative ">
             <blockquote className="p-6 text-lg leading-relaxed">
-              <p>
+              <p className='dark:text-gray-200'>
               Finding the latest tech treasures and innovations is a breeze on Innovation X. Their commitment to curating cutting-edge gadgets and their passion for staying ahead in the tech world make them my go-to source for all things electronic. It's a tech enthusiast's dream come true!
               </p>
             </blockquote>
@@ -99,7 +99,7 @@ const Testimonial = () => {
                   height="48"
                   className="max-w-full rounded-full shrink-0"
                 />
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 dark:text-gray-200">
                   <span className="font-bold uppercase">Elon Musk</span>
                   <cite className="not-italic">
                     <a href="http://www.microsoft.com">CEO, TESLA Inc.</a>

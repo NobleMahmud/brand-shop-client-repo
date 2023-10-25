@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
            <footer className="w-full text-slate-500">
         {/*      <!-- Main footer --> */}
-        <div className="border-t border-slate-200 bg-slate-100 pt-16 pb-12 text-sm">
+        <div className=" border-slate-200 bg-slate-100 pt-16 pb-12 text-sm">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
               <div
@@ -16,7 +16,7 @@ const Footer = () => {
                   id="WindUI-5-logo"
                   aria-label="WindUI logo"
                   aria-current="page"
-                  className="mb-6 flex items-center gap-2 whitespace-nowrap text-base font-medium leading-6 text-slate-700 focus:outline-none"
+                  className="mb-6 dark:text-white flex items-center gap-2 whitespace-nowrap text-base font-medium leading-6 text-slate-700 focus:outline-none"
                   href="javascript:void(0)"
                 >
                   <img className='w-14 h-12 rounded-xl mr-2' src="https://i.ibb.co/yykHgRK/INNOVATION-X1.png" alt="" />

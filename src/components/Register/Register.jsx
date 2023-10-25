@@ -77,9 +77,9 @@ const Register = () => {
     return (
         <div>
             <Header2></Header2>
-            <section className="bg-white">
+            <section className="bg-white dark:bg-gray-700">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
-                    <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
+                    <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 dark:bg-gray-800 sm:px-6 lg:px-8">
                         <div className="absolute inset-0">
                             <img className="object-cover object-top w-full h-full" src="https://i.ibb.co/n8dL601/martin-katler-7w-Cxl-Bf-GMdk-unsplash.jpg" alt="" />
                         </div>
@@ -126,10 +126,10 @@ const Register = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+                    <div className="flex items-center justify-center px-4 py-10 bg-white dark:bg-gray-900 sm:px-6 lg:px-8 sm:py-16 lg:py-24">
                         <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-                            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">Sign up for a galaxy of excitement!</h2>
-                            <p className="mt-2 text-base text-gray-600">Already have an account? <Link to="/login" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Log In</Link></p>
+                            <h2 className="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl">Sign up for a galaxy of excitement!</h2>
+                            <p className="mt-2 text-base text-gray-600 dark:text-white">Already have an account? <Link to="/login" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Log In</Link></p>
 
                             <form onSubmit={handleRegister} method="POST" className="mt-8">
                                 <div className="space-y-5">

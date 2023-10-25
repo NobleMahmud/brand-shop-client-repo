@@ -23,18 +23,19 @@ const CartProducts = ({ product, products, setProducts }) => {
                 })
                     .then(res => res.json())
                     .then(data => {
+                        const remaining = products.filter(pro=>pro._id !== _id);
+                        setProducts(remaining)
+                        Swal.fire(
+                            'Deleted!',
+                            'Your file has been deleted.',
+                            'success'
+                        )
                         console.log(data);
                     })
-                Swal.fire(
-                    'Deleted!',
-                    'Your file has been deleted.',
-                    'success'
-                )
+               
             }
         })
 
-        const remaining = products.filter(pro=>pro._id !== _id);
-        setProducts(remaining)
 
     }
     return (

@@ -19,6 +19,7 @@ const Home = () => {
 
     return (
         <div>
+          
             <Header2></Header2>
             <div style={{backgroundImage:'url("https://i.ibb.co/5js22PY/computer-3174729.jpg")'}} className='h-96 flex items-center flex-col-reverse justify-center md:h-[700px] bg-cover '>
               <h3 className='text-4xl font-bold text-gray-200'>Unlocking Tomorrow's Technology Today</h3>

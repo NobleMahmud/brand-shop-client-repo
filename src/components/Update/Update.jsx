@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import Header2 from '../Header2/Header2';
 
 const Update = () => {
     const product = useLoaderData();
@@ -44,9 +45,10 @@ const Update = () => {
     }
     return (
         <div>
-            <section className="bg-white">
-                    <div className="grid grid-cols-1 lg:grid-cols-2">
-                        <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
+            <Header2></Header2>
+            <section style={{backgroundImage: 'url("https://i.ibb.co/VY373dg/firmbee-com-GANq-Cr1-BRTU-unsplash.jpg")'}} className="bg-white bg-cover">
+                    <div className="">
+                        {/* <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
                             <div className="absolute inset-0">
                                 <img className="object-cover object-top w-full h-full" src="https://i.ibb.co/mc2dhpd/conor-luddy-IVa-Kks-EZm-ZA-unsplash.jpg" alt="" />
                             </div>
@@ -91,12 +93,12 @@ const Update = () => {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
-                            <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-                                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">Add  New Product</h2>
-                                <p className="mt-2 text-base text-gray-600">Your products will be  live in just a few steps!</p>
+                        <div className="flex items-center justify-center px-4 bg-transparent backdrop-blur-sm py-10 sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+                            <div className="w-8/12 hover:-translate-y-20  duration-1000">
+                                <h2 className="text-3xl font-bold leading-tight mt-10 text-black sm:text-4xl">Update Product</h2>
+                                <p className="mt-2 text-base text-gray-800">Your products will be  live in just a few steps!</p>
 
                                 <form onSubmit={handleUpdate} method="POST" className="mt-8">
                                     <div className="space-y-5">
@@ -105,7 +107,7 @@ const Update = () => {
                                             <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">Brand
                                             </label>
                                             <div className="mt-2">
-                                                <select id="country" name="brand" autoComplete="country-name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                                                <select id="country" name="brand" defaultValue={brand} autoComplete="country-name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
                                                     <option>Apple</option>
                                                     <option>Samsung</option>
                                                     <option>Sony</option>
@@ -122,7 +124,7 @@ const Update = () => {
                                             <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
 
                                                 <input
-                                                defaultValue={'examplename'}
+                                                defaultValue={name}
                                                     type="text"
                                                     name="name"
                                                     placeholder="Enter product name"
@@ -137,6 +139,7 @@ const Update = () => {
                                                 <input
                                                     type="text"
                                                     name="photo"
+                                                    defaultValue={photo}
                                                     placeholder="Enter product photo url"
                                                     className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                                                 />
@@ -149,7 +152,7 @@ const Update = () => {
                                             <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">Type
                                             </label>
                                             <div className="mt-2">
-                                                <select name="type" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                                                <select name="type" defaultValue={type} className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
                                                     <option>Phone</option>
                                                     <option>Laptop</option>
                                                     <option>Tab</option>
@@ -170,6 +173,7 @@ const Update = () => {
                                                 <input
                                                     type="text"
                                                     name="price"
+                                                    defaultValue={price}
                                                     placeholder="Enter Price"
                                                     className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                                                 />
@@ -181,6 +185,7 @@ const Update = () => {
                                                 <input
                                                     type="text"
                                                     name="description"
+                                                    defaultValue={description}
                                                     placeholder="Enter short description"
                                                     className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                                                 />
@@ -193,6 +198,7 @@ const Update = () => {
                                                 <input
                                                     type="text"
                                                     name="rating"
+                                                    defaultValue={rating}
                                                     placeholder="Enter product rating"
                                                     className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                                                 />

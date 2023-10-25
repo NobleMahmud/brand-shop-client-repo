@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Header2 from '../Header2/Header2';
+import Swal from 'sweetalert2';
 
 const AddProduct = () => {
     const handleAddProduct = e => {
@@ -24,6 +25,11 @@ const AddProduct = () => {
         })
             .then(res => res.json())
             .then(data => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: 'Product added successfully!',
+                  })
                 console.log(data);
             })
     }
@@ -31,8 +37,8 @@ const AddProduct = () => {
         <div>
             <div>
                 <Header2></Header2>
-                <section style={{backgroundImage: 'url("https://i.ibb.co/WzMfZWq/head-1231873.jpg")'}} className=" bg-cover bg-white">
-                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                <section style={{backgroundImage: 'url("https://i.ibb.co/p0bLkg8/person-using-tablet.jpg")'}} className="  bg-cover bg-white">
+                    <div className="w-full">
                         {/* <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
                             <div className="absolute inset-0">
                                 <img className="object-cover object-top w-full h-full" src="https://i.ibb.co/mc2dhpd/conor-luddy-IVa-Kks-EZm-ZA-unsplash.jpg" alt="" />
@@ -80,10 +86,10 @@ const AddProduct = () => {
                             </div>
                         </div> */}
 
-                        <div className="flex items-center justify-center px-4 py-10 bg-transparent backdrop-blur-xl sm:px-6 lg:px-8 sm:py-16 lg:py-24">
-                            <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-                                <h2 className="text-3xl font-bold leading-tight text-gray-200 sm:text-4xl">Add  New Product</h2>
-                                <p className="mt-2 text-base text-gray-600">Your products will be  live in just a few steps!</p>
+                        <div className="flex items-center justify-center px-4 py-10 bg-transparent  backdrop-blur-sm sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+                            <div className="w-8/12">
+                                <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-5xl">Add  New Product</h2>
+                                <p className="mt-2 text-base text-gray-900">Your products will be  live in just a few steps!</p>
 
                                 <form onSubmit={handleAddProduct} method="POST" className="mt-8">
                                     <div className="space-y-5">
@@ -163,6 +169,7 @@ const AddProduct = () => {
                                                     <option>Laptop</option>
                                                     <option>Tab</option>
                                                     <option>Head Phone</option>
+                                                    <option>Gaming Console</option>
                                                     <option>Smart Watch</option>
                                                     <option>Smart TV</option>
                                                     <option>Stereo System</option>

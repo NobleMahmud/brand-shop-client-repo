@@ -7,7 +7,7 @@ const Brand2 = ({brand}) => {
         
             <div>
                 <div  className="da relative flex rounded-t-xl flex-col object-fit bg-cover
-            justify-center overflow-hidden bg-gray-50">
+            justify-center overflow-hidden rounded-b-xl bg-gray-50">
                 <div className="absolute inset-0 bg-center dark:bg-black"></div>
                 <div className="group relative m-0 flex h-96 w-full rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
                     <div className=" h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-100 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">

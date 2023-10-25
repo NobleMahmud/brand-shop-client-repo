@@ -1,8 +1,20 @@
-#app { height: 100% }
+/* #app { height: 100% }
 html,
 body {
   position: relative;
   height: 100%;
+}
+
+::root{
+  --body_background: white;
+  --body_color:black;
+  --link_color: navy;
+}
+
+[data-theme="dark"] {
+  --body_background: #282c34;
+  --body_color: white;
+  --link_color: cyan;
 }
 
 body {
@@ -32,4 +44,4 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
-}
+} */

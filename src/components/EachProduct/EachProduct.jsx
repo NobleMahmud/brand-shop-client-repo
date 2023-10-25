@@ -49,7 +49,7 @@ const EachProduct = () => {
                 Swal.fire({
                    icon: 'success',
                    title: 'Success',
-                   text: 'Product added!',
+                   text: 'Product added to cart!',
                  })
                 console.log(data);
                  toast("Product Added");

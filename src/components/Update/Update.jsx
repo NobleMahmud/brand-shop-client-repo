@@ -23,7 +23,7 @@ const Update = () => {
         const updateProduct = {_id, brand, name, photo, type, price, rating, description }
         
 
-        fetch(`https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/updateData/${_id}`,{
+        fetch(`https://brand-shop-server-kappa-hazel.vercel.app/updateData/${_id}`,{
             method: 'PUT',
             headers:{
                 'content-type': 'application/json'

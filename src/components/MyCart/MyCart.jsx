@@ -9,7 +9,7 @@ const MyCart = () => {
     const email = user.email;
     // console.log(email);
     useEffect(()=>{
-        fetch(`https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/cart/${email}`)
+        fetch(`https://brand-shop-server-kappa-hazel.vercel.app/cart/${email}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data);

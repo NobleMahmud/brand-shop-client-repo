@@ -31,7 +31,7 @@ import NewForm from "../components/NewForm/NewForm";
         {
           path: "/product/:id",
           element: <PrivateRoute><EachProduct></EachProduct></PrivateRoute>,
-          loader: ({params})=>fetch(`https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/product/${params.id}`)
+          loader: ({params})=>fetch(`https://brand-shop-server-kappa-hazel.vercel.app/product/${params.id}`)
         },
         {
           path: "/login",
@@ -52,7 +52,7 @@ import NewForm from "../components/NewForm/NewForm";
         {
           path: "/update/:id",
           element: <Update></Update>,
-          loader: ({params})=>fetch(`https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/update/${params.id}`)
+          loader: ({params})=>fetch(`https://brand-shop-server-kappa-hazel.vercel.app/update/${params.id}`)
         },
       ],
     },

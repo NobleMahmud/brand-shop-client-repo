@@ -16,7 +16,7 @@ const AddProduct = () => {
 
         const newProduct = { brand, name, photo, type, price, rating, description }
         console.log(newProduct);
-        fetch('https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/addproduct', {
+        fetch('https://brand-shop-server-kappa-hazel.vercel.app/addproduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

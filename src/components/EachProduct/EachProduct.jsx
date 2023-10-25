@@ -37,7 +37,7 @@ const EachProduct = () => {
        
     const handleCart =() =>{
 
-        fetch('https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/cart', {
+        fetch('https://brand-shop-server-kappa-hazel.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

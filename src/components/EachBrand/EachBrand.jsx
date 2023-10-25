@@ -10,7 +10,7 @@ const EachBrand = () => {
     // console.log(brandName);
     
     useEffect(() => {
-        fetch(`https://brand-shop-server-2p91sud42-nobles-projects-263f6853.vercel.app/addproduct/${brandName}`)
+        fetch(`https://brand-shop-server-kappa-hazel.vercel.app/addproduct/${brandName}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
